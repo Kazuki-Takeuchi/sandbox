@@ -9,6 +9,8 @@ describe '三角形の形を求める' do
      expect(Triangle.triangle(['2,', '3,', '1'])).to eq '三角形じゃないです＞＜'
      expect(Triangle.triangle(['3,', '1,', '2'])).to eq '三角形じゃないです＞＜'
      expect(Triangle.triangle(['3,', '2,', '1'])).to eq '三角形じゃないです＞＜'
+     expect(Triangle.triangle(['3,', '2,', '0'])).to eq '三角形じゃないです＞＜'
+     expect(Triangle.triangle(['-3,', '-2', '-1'])).to eq '三角形じゃないです＞＜'
   end
   it '正三角形' do
      expect(Triangle.triangle(['1,', '1,', '1'])).to eq '正三角形ですね！'
